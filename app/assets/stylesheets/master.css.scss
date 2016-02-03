@@ -1,3 +1,6 @@
+
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
+
 .clear {
 	clear: both;
 }
@@ -44,4 +47,25 @@ header {
 
 hr {
 	clear: both;
+}
+
+h1 {
+	font-family:'oswald_regularregular', sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	// letter-spacing: -1.5px;
+}
+
+h2 {
+	font-family: 'oswaldextralight', sans-serif;
+	// letter-spacing: -1.5px;
+}
+
+.links a {
+	color: black;
+	font-size: 25px;
+	border-bottom: 1px solid #dfdfdf;
+	font-family: 'oswaldextralight', sans-serif;
+	font-weight: bold;
+	letter-spacing: 1.75px;
 }
