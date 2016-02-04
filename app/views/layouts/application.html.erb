@@ -9,25 +9,27 @@
 <body>
 
 	<header>
-		<div class="col-xs-3">
+
+		<div class="col-sm-4 hidden-xs slogan">
+			Eventually life happens and we move on.
+		</div>
+		<div class="col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-5 links">
+      <!-- Button trigger modal -->
+      <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+      &nbsp; &nbsp;
+			<%= link_to 'About', about_path %>
+		</div>
+    <div class="col-xs-3">
         <%= link_to root_path, class: 'logo' do %>
       <div class="circle">
         <br />
-          No,
+          Retired
         <br />
-          we aren't
+          since
         <br />
-          old!
+          2012.
       </div>
       <% end %>
-		</div>
-		<div class="col-xs-4 slogan">
-			Eventually life happens and we move on.
-		</div>
-		<div class="col-xs-5 links">
-      <!-- Button trigger modal -->
-      <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
-			<%= link_to 'About', about_path %>
 		</div>
 	</header>
 
@@ -41,8 +43,10 @@
         </div>
         <div class="modal-body">
           <%= simple_form_for Quote.new do |f| %>
-            <%= f.input :saying %>
-            <%= f.input :author %>
+            <%= f.input :saying, label: "What is the saying you want to add?" %>
+
+            <br />
+            <%= f.input :author, label: "Your name? (or put anonymous)" %>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -57,8 +61,6 @@
   <hr />
 	<br class="clear"/>
 
-<h2> You know you're out of the dance scene when...</h2>
-
 <div class="container">
   <% if flash[:error].present? %>
     <div class="col-xs-10 col-xs-offset-1 alert alert-danger">
@@ -70,10 +72,10 @@
 
 <div class="footer">
   <div class="container">
-    <div class="col-xs-6">
+    <div class="col-xs-12 col-sm-6">
       <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
     </div>
-    <div class="col-xs-6 footer-blurb">
+    <div class="col-xs-12 col-sm-6 footer-blurb">
       Made with love by <a href="https://github.com/abckatxyz">Kat Maribao</a><br />
       Want to build your own? - <a href="http://thefirehoseproject.com">Learn how to code here</a>
     </div>
