@@ -10,29 +10,45 @@
 
 	<header>
 		<div class="col-xs-3">
-
+        <%= link_to root_path, class: 'logo' do %>
       <div class="circle">
         <br />
-          YES,
+          No,
         <br />
-          we are
+          we aren't
         <br />
-          old.
+          old!
       </div>
+      <% end %>
 		</div>
 		<div class="col-xs-4 slogan">
-			Because life happens and we move on.
+			But, inevitably, life happens and we move on.
 		</div>
 		<div class="col-xs-5 links">
-			<%= link_to 'Contribute', '#' %>
+			<%= link_to 'Contribute', new_quote_path %>
 			<%= link_to 'About', '#' %>
 		</div>
 	</header>
   <hr />
 	<br class="clear"/>
 
-<%= yield %>
+<h2> You know you're out of the dance scene when...</h2>
 
+<div class="container">
+  <%= yield %>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="col-xs-6">
+      <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
+    </div>
+    <div class="col-xs-6 footer-blurb">
+      Made with love by <a href="https://github.com/abckatxyz">Kat Maribao</a><br />
+      Want to build your own? - <a href="http://thefirehoseproject.com">Learn how to code here</a>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
