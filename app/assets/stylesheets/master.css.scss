@@ -1,6 +1,4 @@
 
-@import url(https://fonts.googleapis.com/css?family=Fredoka+One);
-
 .clear {
 	clear: both;
 }
@@ -10,7 +8,7 @@
     font-style: italic;
     position: relative;
     border-radius: 100%;
-    background: #f84342;
+    background: #673AB7;
     border: 1px solid #F7F7F7;
     width: 80px;
     height: 80px;
@@ -20,9 +18,9 @@
     font-size: 10px;
     line-height: 16px;
     cursor: pointer;
-    transform:rotate(11deg);
-    -ms-transform:rotate(11deg); /* IE 9 */
-    -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
+    // transform:rotate(11deg);
+    // -ms-transform:rotate(11deg); /* IE 9 */
+    // -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
 }
 
 .slogan {
@@ -33,33 +31,57 @@
 
 .links {
 	padding-top: 26px;
+	color:#dfdfdf;
 }
 
 .links a {
-	color:black;
+	color:#dfdfdf;
 	font-size: 25px;
 	border-bottom: 1px solid #dfdfdf;
 }
 
+body {
+  background: url('https://static.pexels.com/photos/26110/pexels-photo-26110.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 header {
 	border-top: 9px solid #222222;
+	color: #FFFFFF;
 }
 
 hr {
 	clear: both;
 }
 
+p, li {
+	color: #FFFFFF;
+	font-size: 15px;
+	font-family:'oswald_regularregular', sans-serif;
+}
+
+
 h1 {
 	font-family:'oswald_regularregular', sans-serif;
 	font-weight: bold;
 	font-size: 48px;
+	color: #dfdfdf;
 	// letter-spacing: -1.5px;
 }
 
 h2 {
 	font-family: 'oswaldextralight', sans-serif;
+	color: #B6B6B6;
 	// letter-spacing: -1.5px;
 }
+
+#retireddancer {
+	color: #D1C4E9;
+}
+
 
 h2 span {
 	color: #dddddd;
@@ -67,7 +89,7 @@ h2 span {
 }
 
 .links a {
-	color: black;
+	color: #FFFFFF;
 	font-size: 25px;
 	border-bottom: 1px solid #dfdfdf;
 	font-family: 'oswaldextralight', sans-serif;
@@ -86,6 +108,11 @@ h2 span {
 	font-style: italic;
 	text-align: right;
 	font-size: 10px;
+	color: #FFFFFF;
+}
+
+.next-quote {
+	color: #448AFF;
 }
 
 .logo:hover {
@@ -103,6 +130,7 @@ h2 span {
 @media (max-width: 750px) {
 	.footer-blurb {
 		text-align: left;
+
 	}
 }
 
