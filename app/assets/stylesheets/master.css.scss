@@ -48,6 +48,13 @@ body {
   background-size: cover;
 }
 
+.containerbox {
+	background-color: rgba(0,0,0,0.5);
+	padding: 50px;
+	max-width:1250px;
+	margin: 100px auto;
+}
+
 header {
 	border-top: 9px solid #222222;
 	color: #FFFFFF;
@@ -60,7 +67,7 @@ hr {
 p, li {
 	color: #FFFFFF;
 	font-size: 15px;
-	font-family:'oswald_regularregular', sans-serif;
+
 }
 
 
